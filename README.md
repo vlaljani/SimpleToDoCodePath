@@ -18,4 +18,28 @@ Required: User can edit a todo item
 
 Required: App persists todo items and retrieves them on app restart
 
+Extensions - Completed user stories:
+-----------------------------------
+
+Suggested: The app persists todo items and retrieves them from the SQLLite DB instead of a text file using the ActiveAndroid ORM
+
+Suggested: The app uses Cursor Adapter instead of Array Adapter
+
+Suggested: Improved the style of the todo items using CustomCursorAdapter
+
+Suggested: Use a DialogFragment with a Save button instead of a new Activity for EditItem 
+
+Suggested: Adding priorities for to do items. 
+
+Priorities are picked using number pickers, which are available for range 0 - NumberOfTasks+1. They can be edited in the dialog fragment. They are indicated to the left of the to do item using exclamation points (!) in red for the top 3 priorities, and in yellow using P followed by the priority number after. Selecting priority 0 => no priority. 
+
+Suggested: Support for completion due dates, which are listed in the list view with items. 
+
+Support for marking tasks as complete, so they appear with a strikethrough in the list.
+
+Updated GIF:
+------------
+
+Pre-work GIF:
+-------------
 ![alt tag](https://github.com/vlaljani/SimpleToDo/blob/master/SimpleToDo.gif)
