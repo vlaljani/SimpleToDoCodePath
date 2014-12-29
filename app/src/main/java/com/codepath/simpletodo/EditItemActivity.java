@@ -13,6 +13,7 @@ public class EditItemActivity extends ActionBarActivity {
 
     private EditText etmlEditItem;
     private int itemPosition;
+    private long itemSqlId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +22,13 @@ public class EditItemActivity extends ActionBarActivity {
 
         etmlEditItem = (EditText) findViewById(R.id.etmlEditItem);
 
-        String itemText = getIntent().getStringExtra("itemText");
+        String oldItemText = getIntent().getStringExtra("itemText");
         itemPosition = getIntent().getIntExtra("itemPosition", 0);
+        itemSqlId = getIntent().getLongExtra("id", 0);
 
         // Using append instead of setText puts the cursor at the end of
         // the text and in focus
-        etmlEditItem.append(itemText);
+        etmlEditItem.append(oldItemText);
     }
 
 
@@ -57,6 +59,7 @@ public class EditItemActivity extends ActionBarActivity {
 
         data.putExtra("editedItemText", etmlEditItem.getText().toString());
         data.putExtra("itemPosition", itemPosition);
+        data.putExtra("id", itemSqlId);
         // Activity finished ok, return the data
         setResult(RESULT_OK, data); // set result code and bundle data for response
         this.finish();

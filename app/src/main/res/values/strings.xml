@@ -10,5 +10,8 @@
     <string name="Edit_Item_String">Edit Item Below:</string>
     <string name="Save_String">Save</string>
     <string name="Edit_Item_Label">Edit Item Below:</string>
+    <string name="myToDoTitle">My ToDos!</string>
+    <string name="PrioritiesTitleString">Now, let\'s get our priorities straight!</string>
+    <string name="cb_item_complete_string">Task Completed?</string>
 
 </resources>

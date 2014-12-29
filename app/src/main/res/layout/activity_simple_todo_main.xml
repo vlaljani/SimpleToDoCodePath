@@ -19,12 +19,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/etNewItem"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btnAddItem"
         android:layout_toStartOf="@+id/btnAddItem"
-        android:hint="@string/Enter_New_Item_String" />
+        android:layout_above="@+id/tvPrioritiesTitle"
+        android:hint="@string/Enter_New_Item_String"
+        />
 
     <ListView
         android:layout_width="wrap_content"
@@ -32,6 +33,41 @@
         android:id="@+id/lvItems"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/tVTitle"
+        android:layout_above="@+id/etNewItem"
+        android:paddingBottom="16dp"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nPNewItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/myToDoTitle"
+        android:id="@+id/tVTitle"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/btnAddItem" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/PrioritiesTitleString"
+        android:id="@+id/tvPrioritiesTitle"
+        android:layout_above="@+id/nPNewItem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+         />
+
+
 </RelativeLayout>
