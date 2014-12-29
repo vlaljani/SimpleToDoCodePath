@@ -39,7 +39,7 @@ Support for marking tasks as complete, so they appear with a strikethrough in th
 
 Updated GIF:
 ------------
-![alt tag](https://github.com/vlaljani/SimpleToDo/blob/master/SimpleToDoWExtensions.gif)
+![alt tag](https://github.com/vlaljani/SimpleToDoCodePath/blob/master/SimpleToDoWExtensions.gif)
 
 Pre-work GIF:
 -------------
