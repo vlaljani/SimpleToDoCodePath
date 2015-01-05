@@ -49,6 +49,10 @@ Updated GIF:
 ------------
 ![alt tag](https://github.com/vlaljani/SimpleToDoCodePath/blob/master/SimpleToDoWExtensions.gif)
 
+UI GIF:
+-------
+![alt tag](https://github.com/vlaljani/SimpleToDoCodePath/blob/master/SimpleToDoWExtensionsAndUI.gif)
+
 Pre-work GIF:
 -------------
 ![alt tag](https://github.com/vlaljani/SimpleToDo/blob/master/SimpleToDo.gif)
