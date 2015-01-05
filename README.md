@@ -37,6 +37,14 @@ Suggested: Support for completion due dates, which are listed in the list view w
 
 Support for marking tasks as complete, so they appear with a strikethrough in the list.
 
+UI Tweaks: Added a transparent/translucent background to the main page. 
+Adjusted the text colors (for headings and list view items). 
+Added dividers in ListView.
+Added a horizontal divider below the ListView.
+Additional headings in the Edit Fragment Dialog for due date and priority. 
+Changed the Save button to an ImageButton with standard 'Save' (floppy disk) icon. 
+
+
 Updated GIF:
 ------------
 ![alt tag](https://github.com/vlaljani/SimpleToDoCodePath/blob/master/SimpleToDoWExtensions.gif)
