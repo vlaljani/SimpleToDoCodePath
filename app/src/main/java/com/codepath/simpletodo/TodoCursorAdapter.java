@@ -73,6 +73,8 @@ public class TodoCursorAdapter extends CursorAdapter {
         }
 
         Spannable bodyString = new SpannableString(" " + body);
+        bodyString.setSpan(new ForegroundColorSpan(Color.GRAY), 0, bodyString.length(),
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
         if (done == 1) {
             priorityString.setSpan(new StrikethroughSpan(), 0, priorityString.length(), 0);

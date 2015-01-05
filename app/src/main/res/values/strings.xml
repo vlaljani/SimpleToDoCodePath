@@ -13,5 +13,7 @@
     <string name="myToDoTitle">My ToDos!</string>
     <string name="PrioritiesTitleString">Now, let\'s get our priorities straight!</string>
     <string name="cb_item_complete_string">Task Completed?</string>
+    <string name="due_date_title_string">Due Date:</string>
+    <string name="EditItemPrioritiesString">Priority:</string>
 
 </resources>

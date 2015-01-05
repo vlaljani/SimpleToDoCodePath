@@ -3,17 +3,38 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SimpleTodoMainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SimpleTodoMainActivity"
+    >
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Add_Item_Label"
-        android:id="@+id/btnAddItem"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="onAddItem"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/myToDoTitle"
+        android:id="@+id/tVTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="16dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvItems"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/lvItemsDividerBelow"
+        android:layout_below="@+id/tVTitle"
+        android:paddingBottom="16dp"
+        android:dividerHeight="1dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#80000000"
+        android:layout_above="@+id/etNewItem"
+        android:id="@+id/lvItemsDividerBelow"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -25,36 +46,8 @@
         android:layout_toStartOf="@+id/btnAddItem"
         android:layout_above="@+id/tvPrioritiesTitle"
         android:hint="@string/Enter_New_Item_String"
+        android:paddingTop="16dp"
         />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lvItems"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/tVTitle"
-        android:layout_above="@+id/etNewItem"
-        android:paddingBottom="16dp"/>
-
-    <NumberPicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nPNewItem"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/myToDoTitle"
-        android:id="@+id/tVTitle"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:paddingBottom="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -65,9 +58,32 @@
         android:layout_above="@+id/nPNewItem"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingBottom="16dp"
         android:paddingTop="16dp"
-         />
+        android:textColor="#000000"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nPNewItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Add_Item_Label"
+        android:id="@+id/btnAddItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onAddItem"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/todolistlong1"
+        android:alpha=".10"/>
 
 
 </RelativeLayout>

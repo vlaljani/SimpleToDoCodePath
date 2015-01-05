@@ -6,10 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.NumberPicker;
 
 /**
@@ -74,7 +74,7 @@ public class EditItemDialog extends DialogFragment implements View.OnClickListen
         dp_edit_item = (DatePicker) view.findViewById(R.id.dp_edit_item);
         dp_edit_item.setMinDate(System.currentTimeMillis() - 1000);
 
-        Button btnSave = (Button) view.findViewById(R.id.btnSave);
+        ImageButton btnSave = (ImageButton) view.findViewById(R.id.btnSave);
         String currText = getArguments().getString("currText", "");
         String title = getArguments().getString("title", getString(R.string.Edit_Item_Label));
         int priority = getArguments().getInt("priority");

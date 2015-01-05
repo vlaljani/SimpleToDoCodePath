@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -48,6 +47,9 @@ public class SimpleTodoMainActivity extends FragmentActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_todo_main);
+
+        EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
+        etNewItem.requestFocus();
 
         // Get a handle to ListView
         lvItems = (ListView) findViewById(R.id.lvItems);
